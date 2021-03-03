@@ -13,6 +13,3 @@
 	</form>
 </body>
 </html>
-<?php  
-	echo "Chao ban $GET['name'], email cua ban la: $GET['email']";
-?>
