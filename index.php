@@ -12,7 +12,7 @@
 		<input type="text" name="email">
 	</form>
 </body>
-	<?php  
-		echo "Chao ban $GET['name'], email cua ban la: $GET['email']";
-	?>
 </html>
+<?php  
+	echo "Chao ban $GET['name'], email cua ban la: $GET['email']";
+?>
