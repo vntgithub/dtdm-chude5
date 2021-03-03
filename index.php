@@ -4,6 +4,15 @@
 	<title>chude5</title>
 </head>
 <body>
-	<h1>test</h1>
+	<form method="GET">
+		<label>Ho ten</label>
+		<input type="text" name="name">
+		<br>
+		<label>Email</label>
+		<input type="text" name="email">
+	</form>
 </body>
+	<?php  
+		echo "Chao ban $GET['name'], email cua ban la: $GET['email']";
+	?>
 </html>
