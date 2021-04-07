@@ -6,7 +6,7 @@
 
 </head>
 <body>
-	<form method="POST" action="adduser.php">
+	<form method="POST" action="">
 		<table>
 			<tr>
 				<td>Username</td>
