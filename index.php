@@ -4,7 +4,7 @@
 	<title>Vo Nhat Trieu B1706657</title>
 </head>
 <body>
-	<form method="GET" action="./get.php">
+	<form method="GET" action="">
 		<table>
 			<tr>
 				<td>Ho ten</td>
@@ -35,5 +35,8 @@
 			</tr>
 		</table>
 	</form>
+	<?php 
+		echo "Chao ban " . $_GET['name'] . ", email cua ban la: " . $_GET['email'];
+ 	?>
 </body>
 </html>
