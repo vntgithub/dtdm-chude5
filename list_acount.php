@@ -15,14 +15,7 @@
 			<th>Username</th>
 			<th>Pass word</th>
 		</tr>
-		<tr>
-			<td>acount1</td>
-			<td>acount1</td>
-		</tr>
-		<tr>
-			<td>acount2</td>
-			<td>acount2</td>
-		</tr>
+		
 		<?php 
 		function pg_connection_string_from_database_url() {
 		  extract(parse_url($_ENV["DATABASE_URL"]));
