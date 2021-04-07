@@ -49,7 +49,7 @@ EOF;
    if(!$ret){
       echo pg_last_error($db);
    } else {
-      echo "Table created successfully\n";
+      echo "Add user successfully\n";
    }
    pg_close($db);
 ?>
