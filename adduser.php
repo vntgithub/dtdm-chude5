@@ -1,7 +1,8 @@
 <?php 
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-
+		echo $username;
+		echo $password;
 		$db = pg_connect(pg_connection_string_from_database_url() );
 	   if(!$db){
 	      echo "Error : Unable to open database\n";
