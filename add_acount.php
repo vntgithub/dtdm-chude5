@@ -28,13 +28,13 @@
 		</table>
 	</form>
 	<?php 
-	function pg_connection_string_from_database_url() {
-	  extract(parse_url($_ENV["DATABASE_URL"]));
-	  return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
-	}
+		function pg_connection_string_from_database_url() {
+		  extract(parse_url($_ENV["DATABASE_URL"]));
+		  return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
+		}
 
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
 
 		$db = pg_connect(pg_connection_string_from_database_url() );
 	   if(!$db){
