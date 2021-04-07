@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>List acount</title>
+	<style type="text/css">
+		table, tr, td, th {
+			border: 1px solid #000;
+		}
+	</style>
 </head>
 <body>
 	<h1>List acount</h1>
@@ -10,7 +15,14 @@
 			<th>Username</th>
 			<th>Pass word</th>
 		</tr>
-
+		<tr>
+			<td>acount1</td>
+			<td>acount1</td>
+		</tr>
+		<tr>
+			<td>acount2</td>
+			<td>acount2</td>
+		</tr>
 		<?php 
 			$db = pg_connect(pg_connection_string_from_database_url() );
 		    if(!$db){
