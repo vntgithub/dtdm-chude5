@@ -49,7 +49,7 @@
 			      ";
 			     
   				 }
-		      echo "Table created successfully\n";
+		      echo "Fetch data successfully\n";
 		   }
 		   pg_close($db);
 		 ?>
