@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List acount</title>
+</head>
+<body>
+	<h1>List acount</h1>
+	<table>
+		<tr>
+			<th>Username</th>
+			<th>Pass word</th>
+		</tr>
+
+		<?php 
+			$db = pg_connect(pg_connection_string_from_database_url() );
+		    if(!$db){
+		      echo "Error : Unable to open database\n";
+		   	} else {
+		      echo "Opened database successfully\n";
+		   	}
+		   
+		   $sql =<<<EOF
+		      SELECT * FROM my_accounts;
+		EOF;
+
+		   $ret = pg_query($db, $sql);
+		   if(!$ret){
+		      echo pg_last_error($db);
+
+		   } else {
+		   		while($row = pg_fetch_row($ret)) {
+			      echo "
+			      	<tr>
+						<td>". $row[0] ."</td>
+						<td>". $row[1] ."</td>
+					</tr>
+			      ";
+			     
+  				 }
+		      echo "Table created successfully\n";
+		   }
+		   pg_close($db);
+		 ?>
+	</table>
+</body>
+</html>
